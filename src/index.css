@@ -1,0 +1,285 @@
+body {
+  background-color: black;
+  color: green;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid green;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  color: green;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.price-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.price-btn:hover {
+  background-color: darkgreen;
+}
+
+.hero-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.5);
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.card {
+  background: linear-gradient(145deg, #1a1a1a, #222);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 255, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(145deg, #1a1a1a, #222);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 270px; 
+  min-height: 340px; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(0, 255, 0, 0.3);
+}
+
+.card img {
+  width: 140px; 
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.product-name {
+  font-size: 18px; 
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.product-description {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.price-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px; /* Tugmalarni moslashtirish */
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: auto;
+}
+
+.price-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  .card {
+    max-width: 85%;
+  }
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.cards {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 255, 0, 0.5);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-bottom: 2px solid green;
+  margin-bottom: 10px;
+}
+
+.page {
+  padding: 20px;
+  color: white;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.page h2 {
+  color: green;
+}
+
+.page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page ul li {
+  padding: 10px;
+  border-bottom: 1px solid green;
+}
+
+body {
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body.light {
+  background: white;
+  color: black;
+}
+
+body.dark {
+  background: black;
+  color: white;
+
+}
+main {
+  min-height: 80vh;
+  padding: 20px;
+}

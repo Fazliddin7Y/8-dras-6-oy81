@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav button {
+  padding: 5px 10px;
+  border: none;
+  background: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav button:hover {
+  background: darkgreen;
+}
+
+body.light {
+  background: white;
+  color: black;
+}
+
+body.dark {
+  background: black;
+  color: white;
+}
+
+.nav.dark {
+  background: black;
+}
